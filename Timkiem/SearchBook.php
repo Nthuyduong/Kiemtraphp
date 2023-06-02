@@ -16,7 +16,7 @@
         <?php
             sleep(1);
             require_once("Database.php");
-            $rows = getListBooks();
+            $rows = getListBooksbyId();
             if($rows == -1)
                 die ("<h3>Loi ket noi CSDL</h3>");
             else if($rows == -2)
